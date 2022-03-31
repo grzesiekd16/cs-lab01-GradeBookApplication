@@ -5,12 +5,12 @@ using System.Text;
 
 namespace GradeBook.GradeBooks
 {
-    public class RankedGradeBook : BaseGradeBook
-    {
-        public RankedGradeBook(string name) : base(name)
-        {
-            Type = Enums.GradeBookType.Ranked;
-        }
+	public class RankedGradeBook : BaseGradeBook
+	{
+		public RankedGradeBook(string name) : base(name)
+		{
+			Type = Enums.GradeBookType.Ranked;
+		}
 
 		public override char GetLetterGrade(double averageGrade)
 		{
@@ -32,6 +32,7 @@ namespace GradeBook.GradeBooks
 			return 'F';
 		}
 
+
 		public override void CalculateStatistics()
 		{
 			if (Students.Count < 5)
@@ -42,7 +43,11 @@ namespace GradeBook.GradeBooks
 			{
 				base.CalculateStatistics();
 			}
-
-
 		}
-}
+
+
+
+	}
+	}
+
+	
